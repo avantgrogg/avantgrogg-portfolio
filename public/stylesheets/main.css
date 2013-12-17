@@ -1,23 +1,60 @@
+.clear {
+  clear: both; }
+
 body {
   background-image: url("/img/binding_dark.png"); }
 
+.purple {
+  background-color: #7d26cd; }
+
+.red {
+  background-color: red; }
+
+.green {
+  background-color: green; }
+
+.blue {
+  background-color: blue; }
+
+.charcoal {
+  background-color: #2e2e2e; }
+
+.align-left {
+  text-align: left; }
+
+.medium-font {
+  font-size: 18px !important; }
+
+.large-font {
+  font-size: 36px !important; }
+
 .ultra-font {
   color: white !important;
-  font-family: 'Ultra', serif;
-  font-size: 36px !important; }
+  font-family: 'Ultra', serif; }
+
+.purple-font {
+  color: #7d26cd !important; }
+
+.white-font {
+  color: white !important; }
 
 .architect-font {
   font-family: 'Architects Daughter', cursive;
-  vertical-align: 13px;
-  color: #7d26cd !important; }
+  vertical-align: 13px; }
 
 .purple-border {
   border-bottom: 10px solid #7d26cd !important;
   background-color: black !important; }
 
 .thirty {
-  padding-top: 300px;
+  padding-top: 100px;
   text-align: center; }
+  .thirty img {
+    background-color: white;
+    border: 2px solid #7d26cd;
+    margin-bottom: 5px; }
+  .thirty .row {
+    margin-bottom: 20px; }
 
 .text-center {
   font-size: 36px;
@@ -25,3 +62,51 @@ body {
 
 .navbar a:hover {
   color: #7d26cd !important; }
+
+.site-title {
+  line-height: 40px;
+  background-color: red;
+  padding-left: 10px;
+  font-size: 24px;
+  margin-bottom: 5px;
+  width: 50%;
+  transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-5deg);
+  /* Safari and Chrome */ }
+
+.site-sponsor {
+  line-height: 20px;
+  background-color: #7d26cd;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  width: 25%;
+  margin-left: 140px;
+  margin-bottom: 20px;
+  transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-5deg);
+  /* Safari and Chrome */ }
+
+.site-description {
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 20px; }
+
+.site-tags {
+  width: 50%;
+  margin-bottom: 60px; }
+  .site-tags div {
+    float: left;
+    padding-left: 10px;
+    line-height: 20px;
+    padding-right: 40px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: white;
+    font-family: 'Roboto', sans-serif; }
