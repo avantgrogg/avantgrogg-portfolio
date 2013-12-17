@@ -3,16 +3,19 @@ body{
 	background-image: url('/img/binding_dark.png');
 }
 .ultra-font{
+	color: white !important;
 	font-family: 'Ultra', serif;
 	font-size: 36px !important;
 }
 .architect-font{
 	font-family: 'Architects Daughter', cursive;
 	vertical-align: 13px;
+	color: $purple !important;
 }
 
 .purple-border{
 	border-bottom: 10px solid $purple !important;
+	background-color: black !important;
 }
 
 .thirty{
@@ -26,8 +29,7 @@ body{
 }
 
 .navbar{
-	a{
-		color: white !important;
+	a{ 
 		&:hover{
 			color: $purple !important;
 		}

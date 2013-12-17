@@ -2,15 +2,18 @@ body {
   background-image: url("/img/binding_dark.png"); }
 
 .ultra-font {
+  color: white !important;
   font-family: 'Ultra', serif;
   font-size: 36px !important; }
 
 .architect-font {
   font-family: 'Architects Daughter', cursive;
-  vertical-align: 13px; }
+  vertical-align: 13px;
+  color: #7d26cd !important; }
 
 .purple-border {
-  border-bottom: 10px solid #7d26cd !important; }
+  border-bottom: 10px solid #7d26cd !important;
+  background-color: black !important; }
 
 .thirty {
   padding-top: 300px;
@@ -20,7 +23,5 @@ body {
   font-size: 36px;
   color: white; }
 
-.navbar a {
-  color: white !important; }
-  .navbar a:hover {
-    color: #7d26cd !important; }
+.navbar a:hover {
+  color: #7d26cd !important; }
