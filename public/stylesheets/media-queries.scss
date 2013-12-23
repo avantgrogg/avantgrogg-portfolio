@@ -22,9 +22,7 @@
 
 
 //For iphone:
-@media (-webkit-min-device-pixel-ratio: 2),  
-             (min--moz-device-pixel-ratio: 2),  
-             (min-resolution: 300dpi) { 
+@media screen and (min-width : 320px) and (max-width : 600px){
     .show-text{
         font-size: 12px !important;
     }
@@ -78,23 +76,10 @@
         }
     }
     .thirty{
-        .col-md-5,.col-md-6{
-            padding-left: 0px !important;
-            padding-right: 0px !important;
-        }
-        
-        img{
-            filter: none !important;
-		    -webkit-filter: none !important;
-            -moz-filter: none !important;
-            &:hover{
-                margin-top: 0px !important;
-            }
-        }
-    }
-    .site-title{
-        margin-top: 40px;
-        width: 75% !important;
+        .site-title{
+            margin-top: 40px;
+            width: 75% !important;
+        }     
     }
 } 
 
