@@ -9,7 +9,7 @@
 
 
 //For iphone:
-@media screen and (max-width : 320px){
+@media screen and (max-width : 320px) and (max-width : 480px){
     .show-text{
         font-size: 12px !important;
     }
@@ -64,6 +64,15 @@
     }
     .thirty{
         padding-top: 10px !important;
+        
+        img{
+            filter: grayscale(0%) !important;
+		    -webkit-filter: grayscale(0%) !important;
+            -moz-filter: grayscale(0%) !important;
+            &:hover{
+                margin-top: 0px !important;
+            }
+        }
     }
     .site-title{
         margin-top: 40px;
@@ -115,10 +124,6 @@
             -moz-filter: grayscale(0%) !important;
         }
     }
-    .site-title{
-        margin-top: 40px;
-        width: 60% !important;
-    }
     .thirty{
         
         img{
@@ -128,6 +133,11 @@
             &:hover{
                 margin-top: 0px !important;
             }
+        }
+        
+        .site-title{
+            margin-top: 40px;
+            width: 60% !important;
         }
     }
 

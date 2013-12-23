@@ -1,7 +1,7 @@
 @media screen and (min-width: 761px) {
   .show-text {
     font-size: 18px !important; } }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) and (max-width: 480px) {
   .show-text {
     font-size: 12px !important; }
 
@@ -53,6 +53,12 @@
 
   .thirty {
     padding-top: 10px !important; }
+    .thirty img {
+      filter: grayscale(0%) !important;
+      -webkit-filter: grayscale(0%) !important;
+      -moz-filter: grayscale(0%) !important; }
+      .thirty img:hover {
+        margin-top: 0px !important; }
 
   .site-title {
     margin-top: 40px;
@@ -97,16 +103,15 @@
       -webkit-filter: grayscale(0%) !important;
       -moz-filter: grayscale(0%) !important; }
 
-  .site-title {
-    margin-top: 40px;
-    width: 60% !important; }
-
   .thirty img {
     filter: grayscale(0%) !important;
     -webkit-filter: grayscale(0%) !important;
     -moz-filter: grayscale(0%) !important; }
     .thirty img:hover {
-      margin-top: 0px !important; } }
+      margin-top: 0px !important; }
+  .thirty .site-title {
+    margin-top: 40px;
+    width: 60% !important; } }
 body {
   background-image: url("/img/binding_dark.png"); }
 
