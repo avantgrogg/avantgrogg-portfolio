@@ -47,16 +47,16 @@
       /* IE 9 */
       -webkit-transform: rotate(-5deg);
       /* Safari and Chrome */
-      filter: grayscale(0%) !important;
-      -webkit-filter: grayscale(0%) !important;
-      -moz-filter: grayscale(0%) !important; }
+      filter: none !important;
+      -webkit-filter: none !important;
+      -moz-filter: none !important; }
 
   .thirty {
     padding-top: 10px !important; }
     .thirty img {
-      filter: grayscale(0%) !important;
-      -webkit-filter: grayscale(0%) !important;
-      -moz-filter: grayscale(0%) !important; }
+      filter: none !important;
+      -webkit-filter: none !important;
+      -moz-filter: none !important; }
       .thirty img:hover {
         margin-top: 0px !important; }
 
