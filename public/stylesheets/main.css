@@ -65,8 +65,8 @@
       -moz-filter: none !important; }
 
   .thirty .col-md-5, .thirty .col-md-6 {
-    padding-left: 10px;
-    padding-right: 10px; }
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
   .thirty img {
     filter: none !important;
     -webkit-filter: none !important;
