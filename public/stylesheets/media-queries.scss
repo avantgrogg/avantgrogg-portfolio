@@ -22,12 +22,12 @@
 
 
 //For iphone:
-@media screen and (max-width : 320px) and (max-width : 600px){
+@media screen and (min-width : 320px) and (max-width : 600px){
     .show-text{
         font-size: 12px !important;
     }
     .show-feel{
-        display: none; 
+        display: none !important; 
     }
     .show-button{
         padding: 4px !important;
@@ -60,7 +60,7 @@
             font-size: 12px !important;
         }
         .blue{
-            width: 80% !important;
+            width: 200px !important;
             line-height: 28px !important;
             padding: 2px !important;
             font-size: 24px !important;
