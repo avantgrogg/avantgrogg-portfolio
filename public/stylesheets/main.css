@@ -64,16 +64,15 @@
       -webkit-filter: none !important;
       -moz-filter: none !important; }
 
-  .thirty {
-    padding-top: 10px !important;
-    padding-left: 10px !important;
-    padding-right: 10px !important; }
-    .thirty img {
-      filter: none !important;
-      -webkit-filter: none !important;
-      -moz-filter: none !important; }
-      .thirty img:hover {
-        margin-top: 0px !important; }
+  .thirty .col-md-5, .thirty .col-md-6 {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .thirty img {
+    filter: none !important;
+    -webkit-filter: none !important;
+    -moz-filter: none !important; }
+    .thirty img:hover {
+      margin-top: 0px !important; }
 
   .site-title {
     margin-top: 40px;

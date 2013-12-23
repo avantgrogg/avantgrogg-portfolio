@@ -76,9 +76,10 @@
         }
     }
     .thirty{
-        padding-top: 10px !important;
-        padding-left: 10px !important;
-        padding-right: 10px !important;
+        .col-md-5,.col-md-6{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
         
         img{
             filter: none !important;
