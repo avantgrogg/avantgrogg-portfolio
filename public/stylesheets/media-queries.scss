@@ -1,0 +1,134 @@
+@media screen and (min-width : 761px){
+   .show-text{
+        font-size: 18px !important;
+    } 
+}
+@media screen and (max-width : 480px){
+    
+}
+
+
+//For iphone:
+@media screen and (max-width : 320px){
+    .show-text{
+        font-size: 12px !important;
+    }
+    .show-feel{
+        display: none; 
+    }
+    .show-button{
+        padding: 4px !important;
+        font-size: 10px !important;
+    }
+    .site-tags{
+        width: 100% !important;
+    }
+    
+    #jumbo{
+        padding-left: 15px !important;
+        margin-top: 60px;
+        background-image: url('/img/escheresque_ste.png');
+        p{
+            color: white;
+                font-size: 12px;
+        }
+        .red{
+            line-height: 14px !important;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 1px !important;
+            font-size: 14px !important;
+        }
+        .green{
+            line-height: 14px !important;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 1px !important;
+            font-size: 12px !important;
+        }
+        .blue{
+            width: 80% !important;
+            line-height: 28px !important;
+            padding: 2px !important;
+            font-size: 24px !important;
+            text-align: center;
+            float: right;
+            margin-right: 30px !important;
+            transform: rotate(-5deg);
+            -ms-transform: rotate(-5deg); /* IE 9 */
+            -webkit-transform: rotate(-5deg); /* Safari and Chrome */
+            filter: grayscale(0%) !important;
+            -webkit-filter: grayscale(0%) !important;
+            -moz-filter: grayscale(0%) !important;
+        }
+    }
+    .thirty{
+        padding-top: 10px !important;
+    }
+    .site-title{
+        margin-top: 40px;
+        width: 75% !important;
+    }
+} 
+
+
+//For ipad:
+@media screen and (max-width : 760px){
+    .show-text{
+        font-size: 12px !important;
+    }
+    #jumbo{
+        margin-top: 60px;
+        background-image: url('/img/escheresque_ste.png');
+        p{
+            color: white;
+        }
+        .red{
+            line-height: 60px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            font-size: 36px;
+        }
+        .green{
+            line-height: 60px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            font-size: 28px;
+        }
+        .blue{
+            width: 40% !important;
+            line-height: 60px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            font-size: 28px;
+            text-align: center;
+            float: right;
+            margin-right: 20px !important;
+            transform: rotate(-5deg);
+            -ms-transform: rotate(-5deg); /* IE 9 */
+            -webkit-transform: rotate(-5deg); /* Safari and Chrome */
+            filter: grayscale(0%) !important;
+            -webkit-filter: grayscale(0%) !important;
+            -moz-filter: grayscale(0%) !important;
+        }
+    }
+    .site-title{
+        margin-top: 40px;
+        width: 60% !important;
+    }
+    .thirty{
+        
+        img{
+            filter: grayscale(0%) !important;
+		    -webkit-filter: grayscale(0%) !important;
+            -moz-filter: grayscale(0%) !important;
+            &:hover{
+                margin-top: 0px !important;
+            }
+        }
+    }
+
+} 

@@ -1,39 +1,44 @@
-@media (scroll-top: 10px) {
-	.show-text {
-		display: inline;
-	}
-}
+@import "media-queries";
 
-$purple: #7D26CD;
-.show-text{
-	display: none;
+body{
+	background-image: url('/img/binding_dark.png');
 }
 .clear{
 	clear: both;
 }
-body{
-	background-image: url('/img/binding_dark.png');
+.align-left{
+	text-align: left;
 }
+.text-center{
+	font-size: 36px;
+	color: white;
+}
+//colors
+$purple: #7D26CD;
+$red: #e03a3a;
+$green: #1fa51f;
+$blue: #2121cc;
+
 .purple{
 	background-color: $purple;
 }
 .red{
-	background-color: red;
+	background-color: $red;
 }
 .green{
-	background-color: green;
+	background-color: $green;
 }
 .blue{
-	background-color: blue;
+	background-color: $blue;
 }
 .charcoal{
 	background-color: #2e2e2e;
 }
-.align-left{
-	text-align: left;
-}
+/////////////////
+
+///Fonts////
 .medium-font{
-	font-size: 18px !important;
+	//font-size: 18px;
 }
 .large-font{
 	font-size: 36px !important;
@@ -48,19 +53,40 @@ body{
 .white-font{
 	color: white !important;
 }
-
 .architect-font{
 	font-family: 'Architects Daughter', cursive;
 	vertical-align: 13px;
 }
 
+
+/////////////////////////
+////    Sections   /////
+///////////////////////
+
+//navbar
+.show-text{
+	display: none;
+    line-height: 55px;
+}
+.show-button{
+    padding: 5px;
+    margin-left: 10px;
+}
 .purple-border{
 	border-bottom: 10px solid $purple !important;
 	background-color: black !important;
 }
+.navbar{
+	a{ 
+		&:hover{
+			color: $purple !important;
+		}
+	}
+}
+
+//jumbotron
 #jumbo{
 	margin-top: 60px;
-
 	background-image: url('/img/escheresque_ste.png');
 	p{
 		color: white;
@@ -90,52 +116,67 @@ body{
 		float: right;
 		margin-right: 200px;
 		transform: rotate(-5deg);
--ms-transform: rotate(-5deg); /* IE 9 */
--webkit-transform: rotate(-5deg); /* Safari and Chrome */
+		-ms-transform: rotate(-5deg); /* IE 9 */
+		-webkit-transform: rotate(-5deg); /* Safari and Chrome */
+		filter: grayscale(100%);
+		-webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+		transition: filter 3s, -webkit-filter 3s;
+		&:hover{
+			-webkit-filter: grayscale(0%);
+			filter: grayscale(0%);
+			cursor: pointer;
+		}
 	}
 }
-
+//job listings
 .thirty{
 	padding-top: 50px;
 	text-align: center;
 	img{
 		background-color: white;
-		border: 2px solid $purple;
+		border: 1px solid black;
 		margin-bottom: 5px;
+		-moz-box-shadow: 3px 3px 4px #000;
+		-webkit-box-shadow: 3px 3px 4px #000;
+		box-shadow: 3px 3px 4px #000;
+		filter: grayscale(100%);
+		-webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+		transition: margin 1s, filter 1s, -webkit-filter 1s;
+		&:hover{
+			margin-top: 10px;
+			-webkit-filter: grayscale(0%);
+			filter: grayscale(0%);
+		}
 	}
 	.row{
 		margin-bottom: 20px;
 	}
 }
 
-.text-center{
-	font-size: 36px;
-	color: white;
-}
-
-.navbar{
-	a{ 
-		&:hover{
-			color: $purple !important;
-		}
-	}
-}
-
 .site-title{
 	line-height: 40px;
-	background-color: red;
+	background-color: $red;
 	border-bottom: 4px solid white;
 	padding-left: 10px;
 	font-size: 24px;
 	margin-bottom: 5px;
 	width: 50%;
 	transform: rotate(-5deg);
--ms-transform: rotate(-5deg); /* IE 9 */
--webkit-transform: rotate(-5deg); /* Safari and Chrome */
+    -ms-transform: rotate(-5deg); /* IE 9 */
+    -webkit-transform: rotate(-5deg); /* Safari and Chrome */
+    -moz-box-shadow: 3px 3px 4px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #000;
+    transition: -webkit-transform 2s;
+    &:hover{
+        -webkit-transform: rotate(-1deg);
+        transform: rotate(-1deg);
+    }
 }
 .site-sponsor{
 	width: 50%;
-
 	.sponsor-title{
 		float:left;
 		line-height: 28px;
@@ -145,10 +186,9 @@ body{
 		font-family: 'Roboto', sans-serif;
 		color: white;
 		transform: rotate(-5deg);
--ms-transform: rotate(-5deg); /* IE 9 */
--webkit-transform: rotate(-5deg); /* Safari and Chrome */
-
-	}
+        -ms-transform: rotate(-5deg); /* IE 9 */
+        -webkit-transform: rotate(-5deg); /* Safari and Chrome */
+	} 
 	.sponsor-name{
 		float: right;
 		line-height: 28px;
@@ -159,12 +199,16 @@ body{
 		font-family: 'Roboto', sans-serif;
 		color: white;
 		transform: rotate(-5deg);
--ms-transform: rotate(-5deg); /* IE 9 */
--webkit-transform: rotate(-5deg); /* Safari and Chrome */
-
+		-ms-transform: rotate(-5deg); /* IE 9 */
+		-webkit-transform: rotate(-5deg); /* Safari and Chrome */
+		border-bottom: 2px solid white;
+		-moz-box-shadow: 3px 3px 4px #000;
+		-webkit-box-shadow: 3px 3px 4px #000;
+		box-shadow: 3px 3px 4px #000;
 	}
 }
 .site-description{
+	margin-top: 40px;
 	text-align: left;
 	font-size: 16px;
 	margin-bottom: 20px;
@@ -181,5 +225,8 @@ body{
 		margin-bottom: 5px;
 		color: white;
 		border-bottom: 4px solid white;
+		-moz-box-shadow: 3px 3px 4px #000;
+		-webkit-box-shadow: 3px 3px 4px #000;
+		box-shadow: 3px 3px 4px #000;
 	}
 }
