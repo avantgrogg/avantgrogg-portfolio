@@ -12,9 +12,12 @@ $(window).scroll(function(){ // scroll event
 });
 
 $(".show-button").click(function(event){
-    $(".show-button").html("doug@avantgrogg.com");   
+    window.location = 'mailto:doug@avantgrogg.com';
+    $(".show-button").html("doug@avantgrogg.com");
+    $(".show-button").addClass("normal-cursor");
 });
 
 $("#jumbo .blue").click(function(event){
-   $("#jumbo .blue").html("doug@avantgrogg.com"); 
+   $("#jumbo .blue").html("doug@avantgrogg.com");
+    $("#jumbo .blue").addClass("normal-cursor");
 });

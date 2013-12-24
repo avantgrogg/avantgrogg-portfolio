@@ -129,6 +129,9 @@ body {
   font-size: 36px;
   color: white; }
 
+.normal-cursor {
+  cursor: text !important; }
+
 .purple {
   background-color: #7d26cd; }
 
@@ -167,7 +170,8 @@ body {
 
 .show-button {
   padding: 5px;
-  margin-left: 10px; }
+  margin-left: 10px;
+  cursor: pointer; }
 
 .purple-border {
   border-bottom: 10px solid #7d26cd !important;

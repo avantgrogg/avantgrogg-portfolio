@@ -13,6 +13,9 @@ body{
 	font-size: 36px;
 	color: white;
 }
+.normal-cursor{
+    cursor: text !important;
+}
 //colors
 $purple: #7D26CD;
 $red: #e03a3a;
@@ -71,6 +74,7 @@ $blue: #2121cc;
 .show-button{
     padding: 5px;
     margin-left: 10px;
+    cursor:pointer;
 }
 .purple-border{
 	border-bottom: 10px solid $purple !important;
