@@ -12,12 +12,17 @@ $(window).scroll(function(){ // scroll event
 });
 
 $(".show-button").click(function(event){
-    window.location = 'mailto:doug@avantgrogg.com';
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        window.location = 'mailto:doug@avantgrogg.com';
+    }
     $(".show-button").html("doug@avantgrogg.com");
     $(".show-button").addClass("normal-cursor");
 });
 
 $("#jumbo .blue").click(function(event){
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        window.location = 'mailto:doug@avantgrogg.com';
+    }
    $("#jumbo .blue").html("doug@avantgrogg.com");
     $("#jumbo .blue").addClass("normal-cursor");
 });
