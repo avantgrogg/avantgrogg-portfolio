@@ -130,7 +130,8 @@ body {
   color: white; }
 
 .normal-cursor {
-  cursor: text !important; }
+  cursor: text !important;
+  font-family: 'Architects Daughter', cursive !important; }
 
 .purple {
   background-color: #7d26cd; }
