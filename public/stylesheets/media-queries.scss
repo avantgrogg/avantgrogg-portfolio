@@ -60,9 +60,13 @@
             font-size: 12px !important;
         }
         .blue{
-            width: 200px !important;
+            //width: 200px !important;
+            margin-top: 5px;
             line-height: 28px !important;
-            padding: 2px !important;
+            padding-left: 3px;
+            padding-right: 3px;
+            padding-bottom: 2px;
+            padding-top: 2px;
             font-size: 24px !important;
             text-align: center;
             float: right;
@@ -88,6 +92,7 @@
 @media screen and (min-width : 768px) and (max-width : 1024px){
     .show-text{
         font-size: 12px !important;
+        width: 500px !important;
     }
     #jumbo{
         margin-top: 60px;
@@ -110,7 +115,7 @@
             font-size: 28px;
         }
         .blue{
-            width: 40% !important;
+            //width: 40% !important;
             line-height: 60px;
             padding-left: 5px;
             padding-right: 5px;
