@@ -3,21 +3,27 @@
     font-size: 18px !important; }
 
   .thirty img {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    transition: width 1s, filter 1s, -webkit-filter 1s; }
+    -webkit-transition: width 1s, -webkit-filter 1s;
+    -moz-transition: width 1s, filter 1s, -moz-filter 1s, -moz-filter 1s;
+    -o-transition: width 1s, filter 1s, -o-filter 1s, -o-filter 1s;
+    -ms-transition: width 1s, filter 1s, -ms-filter 1s, -ms-filter 1s;
+    transition: width 1s, filter 1s, filter 1s, filter 1s; }
   .thirty .row:hover img {
-    width: 110%;
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%); }
+    width: 110%; }
   .thirty .row:hover .site-title {
     -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
     transform: rotate(-1deg); }
 
   .site-title {
     width: 50% !important;
-    transition: -webkit-transform 2s; }
+    -webkit-transition: -webkit-transform 2s;
+    -moz-transition: -moz-transform 2s;
+    -o-transition: -o-transform 2s;
+    -ms-transition: -ms-transform 2s;
+    transition: transform 2s; }
 
   .row {
     margin-bottom: 80px !important; } }
