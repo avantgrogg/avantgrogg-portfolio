@@ -221,6 +221,30 @@ $blue: #2121cc;
 	text-align: left;
 	font-size: 16px;
 	margin-bottom: 20px;
+    ul{
+        span.glyphicon{
+            float: left;
+            margin-left: -30px;
+            padding-top: 2px;
+        }
+        padding-left: 30px;
+        list-style: none;
+        .red-check{
+            color: $red; 
+        }
+        .purple-check{
+            color: $purple;  
+        }
+        .green-check{
+            color: $green;
+        }
+        .blue-check{
+            color: $blue;
+        }
+        li{
+            margin-bottom: 10px;
+        }
+    }
 }
 .site-tags{
 	width: 50%;

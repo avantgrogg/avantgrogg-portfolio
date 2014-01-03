@@ -13,7 +13,10 @@
       filter: grayscale(0%); }
 
   .site-title {
-    width: 50% !important; } }
+    width: 50% !important; }
+
+  .row {
+    margin-bottom: 80px !important; } }
 @media screen and (min-width: 320px) and (max-width: 600px) {
   .show-text {
     font-size: 12px !important; }
@@ -307,6 +310,23 @@ body {
   text-align: left;
   font-size: 16px;
   margin-bottom: 20px; }
+  .site-description ul {
+    padding-left: 30px;
+    list-style: none; }
+    .site-description ul span.glyphicon {
+      float: left;
+      margin-left: -30px;
+      padding-top: 2px; }
+    .site-description ul .red-check {
+      color: #e03a3a; }
+    .site-description ul .purple-check {
+      color: #7d26cd; }
+    .site-description ul .green-check {
+      color: #1fa51f; }
+    .site-description ul .blue-check {
+      color: #2121cc; }
+    .site-description ul li {
+      margin-bottom: 10px; }
 
 .site-tags {
   width: 50%;
