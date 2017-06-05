@@ -1,3 +1,30 @@
 @import './base.scss';
 @import './work.scss';
 @import './home.scss';
+
+.is-purple {
+    background-color: darkorchid;
+}
+
+.is-green {
+    background-color: green;
+}
+
+.is-blue {
+    background-color: darkcyan;
+}
+
+.no-scroll {
+    overflow: auto;
+    //height: 100vh;
+}
+
+body {
+    position: relative;
+}
+
+nav {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}

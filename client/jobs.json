@@ -1,109 +1,90 @@
 {
     "jobs":[
         {
-            "name": "Forgetlines",
-            "image": "forgetlines.jpg",
-            "tags": ["ruby", "rails", "js", "css"],
+            "name": "Anthropologie",
+            "image": "anthropologie.png",
+            "link": "www.anthropologie.com",
+            "tags": [],
             "short": "",
-            "long": "Utilized a variety of apis to enhance the application inlcuding PostMarkApp, MailChimp, Yelp, Facebook, and Twitter. Performance monitoring via New Relic and built from the ground-up via test driven development using RSPec. Responsive design built on Bootstrap. Mobile JSON HTTP calls interpreted via NodeJS."
+            "long": "<p>Lead the frontend architecture creation for a replatform of URBN's core brands.</p><p><b>Python</b> was used for the server, replacing the existing Java/ATG stack. <b>Jinja</b> and <b>Nunjucks</b> were chosen as the templating language because it allowed for isomorphism between <b>JS</b> and <b>Python</b></p><p>Since we could not use <b>React</b> because of our chosen template solution, I created a custom component library that utilized <b>Nunjucks</b> for templates and <b>MorphDOM</b> for rendering. The library acted as a factory, generating components, and sub-components on demand, and was all built using composition, as opposed to brittle class extensions."
         },
         {
             "name": "Paste Magazine",
-            "image": "paste.png",
+            "image": "pastemagazine.png",
+            "link": "www.pastemagazine.com",
+            "tags": ["ruby", "rails", "css", "js"],
+            "short": "",
+            "long": "<p>A <b>Rails</b> site that I was a fullstack developer on. <p> Setup load balancing with a dedicated db server and a reverse proxy between <b>apache</b> and <b>passenger</b>. Did a complete site update making the site more in line with the clients current brand strategy. Setup <b>OpenX Pro</b> and maintained ad delivery through various campaigns.</span>"
+        },
+        {
+            "name": "ReadiTrak",
+            "image": "readitrak.png",
+            "tags": ["php", "codeigniter", "css", "js", "joomla"],
+            "short": "",
+            "long": "Worked as a <b>Java</b> full stack developer implementing layouts and business logic the matched the clients design."
+        },
+        {
+            "name": "Cubesmart",
+            "image": "cubesmart.png",
+            "tags": ["ruby", "rails", "js", "css"],
+            "short": "",
+            "long": "A codeigniter site with a large amount of client rendered content. Based on user interactions, json was sent to the client where it was parsed and injected into the page."
+        },
+        {
+            "name": "LLS",
+            "image": "lls.png",
             "tags": ["ruby", "rails", "css", "js", "node"],
             "short": "",
-            "long": "Setup load balancing with a dedicated db server and a reverse proxy between apache and passenger. Did a complete site update making the site more in line with the clients current brand strategy. Setup OpenX Pro and maintained ad delivery through various campaigns."
+            "long": "Worked on a mobile app using <b>Phonegap</b> and the <b>Cordova</b> framework. Using <b>JS</b> and <b>CSS</b> we were able to make an iOS app that behaved natively."
+        },
+        {
+            "name": "Urban Outfitters",
+            "image": "urbanoutfitters.png",
+            "tags": ["php", "codeigniter", "css", "js", "joomla"],
+            "short": "",
+            "long": "<p>Lead the frontend architecture creation for a replatform of URBN's core brands.</p><p>All css followed <b>BEM</b> best practices allowing for selector scoping without having to sacrifice css parse speed in the browser. Client state management was handled via <b>Redux</b> which when combined with <b>Redux-Saga</b> for async tasks, allowed us to build a far more imperative system. Which in turn, allowed for a lot more reusability between various features.</p><p>A build tool was created utilizing webpack and gulp. Which allowed for sass compilation, babel transpilation, and bundle generation.</p>"
+        },
+        {
+            "name": "Free People",
+            "image": "freepeople.png",
+            "tags": ["ruby", "rails", "js", "css"],
+            "short": "",
+            "long": "A <b>NodeJS</b> site built using <b>Hapi</b> that is fully functional with reactive streams used to handle async io. Isomorphic templates were achieved via <b>Nunjucks</b>"
+        },
+        {
+            "name": "Clutch",
+            "image": "clutchshopping.png",
+            "tags": ["cfwheels", "coldfusion", "js", "css"],
+            "short": "",
+            "long": "Built a user portal utilizing <b>ColdFusion</b> and <b>CFWheels</b>. Fully styled to spec and with user events that would xhr in server rendered content."
+        },
+        {
+            "name": "Without Walls",
+            "image": "withoutwalls.png",
+            "tags": ["php", "codeigniter", "css", "js", "joomla"],
+            "short": "",
+            "long": "<p>Maintained a <b>Java</b> site with certain features built out as stand-alone spas utilizing <b>Angular</b>. Site was fully responsive with a 12 column grid based on the <b>Singularity</b> framework.</p> <p>Worked with our design and services team to build out feature requests from the product team.</p>"
+        },
+        {
+            "name": "Stealth",
+            "image": "stealth.png",
+            "tags": ["ruby", "rails", "js", "css"],
+            "short": "",
+            "long": "A <b>Java</b> application used for trading. Modified and styled the existing user interface and built a new help interface from scratch."
         },
         {
             "name": "Straightpay",
             "image": "straightpay.png",
-            "tags": ["php", "codeigniter", "css", "js", "joomla"],
-            "short": "",
-            "long": "Created user/merchant portals using CodeIgniter including a virtual terminal. All portals had responsive design and utilized common js/css libraries. Did project management/code review for a team of offshore engineers. Created a custom joomla site that was responsive."
-        },
-        {
-            "name": "Forgetlines 2",
-            "image": "forgetlines.jpg",
-            "tags": ["ruby", "rails", "js", "css"],
-            "short": "",
-            "long": "Utilized a variety of apis to enhance the application inlcuding PostMarkApp, MailChimp, Yelp, Facebook, and Twitter. Performance monitoring via New Relic and built from the ground-up via test driven development using RSPec. Responsive design built on Bootstrap. Mobile JSON HTTP calls interpreted via NodeJS."
-        },
-        {
-            "name": "Paste Magazine 2",
-            "image": "paste.png",
             "tags": ["ruby", "rails", "css", "js", "node"],
             "short": "",
-            "long": "Setup load balancing with a dedicated db server and a reverse proxy between apache and passenger. Did a complete site update making the site more in line with the clients current brand strategy. Setup OpenX Pro and maintained ad delivery through various campaigns."
+            "long": "Created user/merchant portals using <b>CodeIgniter</b> including a virtual terminal. All portals had responsive design and utilized common <b>js</b> and <b>css</b> libraries. Did project management/code review for a team of offshore engineers. Created a custom <b>Joomla</b> site that was responsive."
         },
         {
-            "name": "Straightpay 2",
-            "image": "straightpay.png",
-            "tags": ["php", "codeigniter", "css", "js", "joomla"],
-            "short": "",
-            "long": "Created user/merchant portals using CodeIgniter including a virtual terminal. All portals had responsive design and utilized common js/css libraries. Did project management/code review for a team of offshore engineers. Created a custom joomla site that was responsive."
-        },
-        {
-            "name": "Forgetlines 3",
+            "name": "Forgetlines",
             "image": "forgetlines.jpg",
-            "tags": ["ruby", "rails", "js", "css"],
-            "short": "",
-            "long": "Utilized a variety of apis to enhance the application inlcuding PostMarkApp, MailChimp, Yelp, Facebook, and Twitter. Performance monitoring via New Relic and built from the ground-up via test driven development using RSPec. Responsive design built on Bootstrap. Mobile JSON HTTP calls interpreted via NodeJS."
-        },
-        {
-            "name": "Paste Magazine 3",
-            "image": "paste.png",
-            "tags": ["ruby", "rails", "css", "js", "node"],
-            "short": "",
-            "long": "Setup load balancing with a dedicated db server and a reverse proxy between apache and passenger. Did a complete site update making the site more in line with the clients current brand strategy. Setup OpenX Pro and maintained ad delivery through various campaigns."
-        },
-        {
-            "name": "Straightpay 3",
-            "image": "straightpay.png",
             "tags": ["php", "codeigniter", "css", "js", "joomla"],
             "short": "",
-            "long": "Created user/merchant portals using CodeIgniter including a virtual terminal. All portals had responsive design and utilized common js/css libraries. Did project management/code review for a team of offshore engineers. Created a custom joomla site that was responsive."
-        },
-        {
-            "name": "Forgetlines 4",
-            "image": "forgetlines.jpg",
-            "tags": ["ruby", "rails", "js", "css"],
-            "short": "",
-            "long": "Utilized a variety of apis to enhance the application inlcuding PostMarkApp, MailChimp, Yelp, Facebook, and Twitter. Performance monitoring via New Relic and built from the ground-up via test driven development using RSPec. Responsive design built on Bootstrap. Mobile JSON HTTP calls interpreted via NodeJS."
-        },
-        {
-            "name": "Paste Magazine 4",
-            "image": "paste.png",
-            "tags": ["ruby", "rails", "css", "js", "node"],
-            "short": "",
-            "long": "Setup load balancing with a dedicated db server and a reverse proxy between apache and passenger. Did a complete site update making the site more in line with the clients current brand strategy. Setup OpenX Pro and maintained ad delivery through various campaigns."
-        },
-        {
-            "name": "Straightpay 4",
-            "image": "straightpay.png",
-            "tags": ["php", "codeigniter", "css", "js", "joomla"],
-            "short": "",
-            "long": "Created user/merchant portals using CodeIgniter including a virtual terminal. All portals had responsive design and utilized common js/css libraries. Did project management/code review for a team of offshore engineers. Created a custom joomla site that was responsive."
-        },
-        {
-            "name": "Forgetlines 5 ",
-            "image": "forgetlines.jpg",
-            "tags": ["ruby", "rails", "js", "css"],
-            "short": "",
-            "long": "Utilized a variety of apis to enhance the application inlcuding PostMarkApp, MailChimp, Yelp, Facebook, and Twitter. Performance monitoring via New Relic and built from the ground-up via test driven development using RSPec. Responsive design built on Bootstrap. Mobile JSON HTTP calls interpreted via NodeJS."
-        },
-        {
-            "name": "Paste Magazine 5",
-            "image": "paste.png",
-            "tags": ["ruby", "rails", "css", "js", "node"],
-            "short": "",
-            "long": "Setup load balancing with a dedicated db server and a reverse proxy between apache and passenger. Did a complete site update making the site more in line with the clients current brand strategy. Setup OpenX Pro and maintained ad delivery through various campaigns."
-        },
-        {
-            "name": "Straightpay 5",
-            "image": "straightpay.png",
-            "tags": ["php", "codeigniter", "css", "js", "joomla"],
-            "short": "",
-            "long": "Created user/merchant portals using CodeIgniter including a virtual terminal. All portals had responsive design and utilized common js/css libraries. Did project management/code review for a team of offshore engineers. Created a custom joomla site that was responsive."
+            "long": "A Rails site that utilized a variety of apis to enhance the application inlcuding PostMarkApp, MailChimp, Yelp, Facebook, and Twitter. Performance monitoring via <b>New Relic</b> and built from the ground-up via test driven development using <b>RSPec</b>. Responsive design built on <b>Bootstrap</b>."
         }
     ]
 }

@@ -13,10 +13,9 @@ export const Work = ({state, selectJob, removeJob}) => (
       <LargeRight jobs={state.jobs.slice(3,6)} selectJob={selectJob}/>
       <LargeLeft jobs={state.jobs.slice(6,9)} selectJob={selectJob}/>
       <LargeRight jobs={state.jobs.slice(9,12)} selectJob={selectJob}/>
-      <AllSame jobs={state.jobs.slice(12,15)} selectJob={selectJob}/>
     </div>
   </div>
   <ModalOverlay selectedJob={state.selectedJob} removeJob={removeJob} />
-  <InfoPanel selectedJob={state.selectedJob} />
+  <InfoPanel selectedJob={state.selectedJob} removeJob={removeJob}/>
   </div>
 )

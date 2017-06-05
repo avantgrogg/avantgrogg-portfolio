@@ -12,10 +12,13 @@ const mapDispatchToProps = (dispatch) => {
     return {
         selectJob: (event, job) => {
             event.preventDefault();
+            document.body.classList.add('no-scroll');
             dispatch(selectJobAction(job));
         },
         removeJob: (event) => {
             event.preventDefault();
+            let body = document.getElementsByTagName('body');
+            document.body.classList.remove('no-scroll');
             dispatch(removeSelectedJobAction())
         }
     };

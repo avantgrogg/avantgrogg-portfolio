@@ -22,20 +22,6 @@
             "long": ""
         },
         {
-            "name": "Without Walls",
-            "image": "ww.jpg",
-            "tags": ["java", "atg", "js", "angular"],
-            "short": "",
-            "long": ""
-        },
-        {
-            "name": "Without Walls",
-            "image": "ww.jpg",
-            "tags": ["java", "atg", "js", "angular"],
-            "short": "",
-            "long": ""
-        },
-        {
             "name": "Anthropologie",
             "image": "an.jpg",
             "tags": ["python", "tornado", "js", "redux", "redux-saga"],
