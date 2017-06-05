@@ -1,1 +1,0 @@
-This is my portfolio site. It's HTML5 with some CSS3 animations, and some simple responsive design built on Bootstrap. Enjoy :)

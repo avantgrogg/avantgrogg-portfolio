@@ -1,0 +1,95 @@
+.info-panel {
+  position: fixed;
+  z-index: 9100;
+  right: 0;
+  top: 0;
+  width: 40%;
+  opacity: 1;
+  color: white;
+  height: 100vh;
+  transition: right .5s, opacity .5s, transform .5s;
+  overflow: scroll; }
+  .info-panel.hide {
+    opacity: 0;
+    right: -40%; }
+  .info-panel .selected-job-name {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black; }
+  .info-panel .delete {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    z-index: 9200; }
+
+.modal-overlay {
+  position: fixed;
+  background-color: black;
+  opacity: 0;
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: opacity 1s z-index 1s; }
+  .modal-overlay.show {
+    opacity: 0.8;
+    z-index: 9000; }
+
+@media (max-width: 768px) {
+  .info-panel {
+    width: 100%; } }
+
+.job {
+  -webkit-filter: drop-shadow(1px 1px 2px #222);
+  filter: drop-shadow(1px 1px 2px #222);
+  position: relative; }
+  .job:hover {
+    opacity: 0.9; }
+  .job .job-name-panel {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.0;
+    transition: opacity .5s;
+    align-items: center;
+    justify-content: center; }
+    .job .job-name-panel:hover {
+      opacity: 0.9; }
+    .job .job-name-panel .job-name {
+      color: white;
+      border-bottom: 1px solid white;
+      padding-bottom: 10px; }
+
+@media (max-width: 768px) {
+  .job .job-name-panel {
+    display: none; }
+  .job-name {
+    opacity: 1;
+    bottom: 0;
+    height: 20%; }
+    .job-name:hover {
+      opacity: 1; } }
+
+.is-purple {
+  background-color: darkorchid; }
+
+.is-green {
+  background-color: green; }
+
+.is-blue {
+  background-color: darkcyan; }
+
+.no-scroll {
+  overflow: auto; }
+
+body {
+  position: relative; }
+
+nav {
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem; }
