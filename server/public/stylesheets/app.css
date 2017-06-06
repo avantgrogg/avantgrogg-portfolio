@@ -9,13 +9,16 @@
   height: 100vh;
   transition: right .5s, opacity .5s, transform .5s;
   overflow: scroll; }
+  .info-panel a {
+    color: black; }
   .info-panel.hide {
     opacity: 0;
     right: -100%; }
   .info-panel .selected-job-name {
     padding-top: 5px;
     padding-bottom: 5px;
-    color: black; }
+    color: black;
+    text-decoration: underline; }
   .info-panel .delete {
     position: absolute;
     top: 1%;
@@ -86,6 +89,9 @@
 
 .is-blue {
   background-color: darkcyan; }
+
+.has-underline {
+  text-decoration: underline; }
 
 .no-scroll {
   overflow: auto; }

@@ -10,9 +10,17 @@ export const InfoPanel = ({selectedJob, removeJob}) => (
                 </div>
                 <div className="card-content">
                     <div className="content">
-                        <p className="selected-job-name title">{selectedJob.name}</p>
+                        {getJobLink(selectedJob)}
                         <span className="subtitle" dangerouslySetInnerHTML={{__html: selectedJob.long}}></span>
                     </div>
                 </div>
             </div>
 )
+
+function getJobLink(selectedJob) {
+    if(selectedJob.link) {
+        return <h2 className="selected-job-name title"><a target="_blank" href={selectedJob.link}>{selectedJob.name}</a></h2>
+    }
+
+    return <h2 className="selected-job-name title">{selectedJob.name}</h2>
+}

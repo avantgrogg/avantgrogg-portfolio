@@ -29464,7 +29464,7 @@ module.exports = {
 			"name": "Anthropologie",
 			"image": "anthropologie.png",
 			"imageSmall": "anthropologie-small.png",
-			"link": "www.anthropologie.com",
+			"link": "http://www.anthropologie.com",
 			"tags": [],
 			"short": "",
 			"long": "<p>Lead the frontend architecture creation for a replatform of URBN's core brands.</p><p><b>Python</b> was used for the server, replacing the existing Java/ATG stack. <b>Jinja</b> and <b>Nunjucks</b> were chosen as the templating language because it allowed for isomorphism between <b>JS</b> and <b>Python</b></p><p>Since we could not use <b>React</b> because of our chosen template solution, I created a custom component library that utilized <b>Nunjucks</b> for templates and <b>MorphDOM</b> for rendering. The library acted as a factory, generating components, and sub-components on demand, and was all built using composition, as opposed to brittle class extensions."
@@ -29473,7 +29473,7 @@ module.exports = {
 			"name": "Paste Magazine",
 			"image": "pastemagazine.png",
 			"imageSmall": "pastemagazine-small.png",
-			"link": "www.pastemagazine.com",
+			"link": "http://www.pastemagazine.com",
 			"tags": [
 				"ruby",
 				"rails",
@@ -29487,6 +29487,7 @@ module.exports = {
 			"name": "ReadiTrak",
 			"image": "readitrak.png",
 			"imageSmall": "readitrak-small.png",
+			"link": "http://www.readitrak.com/",
 			"tags": [
 				"php",
 				"codeigniter",
@@ -29501,6 +29502,7 @@ module.exports = {
 			"name": "Cubesmart",
 			"image": "cubesmart.png",
 			"imageSmall": "cubesmart-small.png",
+			"link": "http://www.cubesmart.com",
 			"tags": [
 				"ruby",
 				"rails",
@@ -29514,6 +29516,7 @@ module.exports = {
 			"name": "LLS",
 			"image": "lls.png",
 			"imageSmall": "lls-small.png",
+			"link": "http://www.lls.org",
 			"tags": [
 				"ruby",
 				"rails",
@@ -29528,6 +29531,7 @@ module.exports = {
 			"name": "Urban Outfitters",
 			"image": "urbanoutfitters.png",
 			"imageSmall": "urbanoutfitters-small.png",
+			"link": "http://www.urbanoutfitters.com",
 			"tags": [
 				"php",
 				"codeigniter",
@@ -29542,6 +29546,7 @@ module.exports = {
 			"name": "Free People",
 			"image": "freepeople.png",
 			"imageSmall": "freepeople-small.png",
+			"link": "http://www.freepeople.com",
 			"tags": [
 				"ruby",
 				"rails",
@@ -29555,6 +29560,7 @@ module.exports = {
 			"name": "Clutch",
 			"image": "clutchshopping.png",
 			"imageSmall": "clutchshopping-small.png",
+			"link": "http://www.clutchshopping.com",
 			"tags": [
 				"cfwheels",
 				"coldfusion",
@@ -29581,6 +29587,7 @@ module.exports = {
 		{
 			"name": "Stealth",
 			"image": "stealth.png",
+			"imageSmall": "stealth-small.png",
 			"tags": [
 				"ruby",
 				"rails",
@@ -29602,12 +29609,14 @@ module.exports = {
 				"node"
 			],
 			"short": "",
+			"link": "",
 			"long": "Created user/merchant portals using <b>CodeIgniter</b> including a virtual terminal. All portals had responsive design and utilized common <b>js</b> and <b>css</b> libraries. Did project management/code review for a team of offshore engineers. Created a custom <b>Joomla</b> site that was responsive."
 		},
 		{
 			"name": "Forgetlines",
 			"image": "forgetlines.jpg",
 			"imageSmall": "forgetlines-small.jpeg",
+			"link": "",
 			"tags": [
 				"php",
 				"codeigniter",
@@ -29874,16 +29883,32 @@ var InfoPanel = exports.InfoPanel = function InfoPanel(_ref) {
             _react2.default.createElement(
                 'div',
                 { className: 'content' },
-                _react2.default.createElement(
-                    'p',
-                    { className: 'selected-job-name title' },
-                    selectedJob.name
-                ),
+                getJobLink(selectedJob),
                 _react2.default.createElement('span', { className: 'subtitle', dangerouslySetInnerHTML: { __html: selectedJob.long } })
             )
         )
     );
 };
+
+function getJobLink(selectedJob) {
+    if (selectedJob.link) {
+        return _react2.default.createElement(
+            'h2',
+            { className: 'selected-job-name title' },
+            _react2.default.createElement(
+                'a',
+                { target: '_blank', href: selectedJob.link },
+                selectedJob.name
+            )
+        );
+    }
+
+    return _react2.default.createElement(
+        'h2',
+        { className: 'selected-job-name title' },
+        selectedJob.name
+    );
+}
 
 /***/ }),
 /* 123 */
