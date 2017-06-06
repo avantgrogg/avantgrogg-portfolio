@@ -4955,10 +4955,10 @@ var Job = exports.Job = function Job(_ref) {
         { className: 'tile is-child is-3by2 job' },
         _react2.default.createElement(
             'figure',
-            { className: 'image' },
-            _react2.default.createElement('img', { onTouchEnd: function onTouchEnd(e) {
+            { onClick: function onClick(e) {
                     return selectJob(e, job);
-                }, src: '/images/' + job.image })
+                }, className: 'image' },
+            _react2.default.createElement('img', { src: '/images/' + job.image })
         ),
         _react2.default.createElement(
             'div',

@@ -11,7 +11,7 @@
   overflow: scroll; }
   .info-panel.hide {
     opacity: 0;
-    right: -40%; }
+    right: -100%; }
   .info-panel .selected-job-name {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -65,14 +65,18 @@
       padding-bottom: 10px; }
 
 @media (max-width: 768px) {
-  .job .job-name-panel {
-    display: none; }
-  .job-name {
-    opacity: 1;
-    bottom: 0;
-    height: 20%; }
-    .job-name:hover {
-      opacity: 1; } }
+  .job {
+    -webkit-filter: none;
+    filter: none; }
+    .job .job-name-panel {
+      bottom: 0;
+      top: auto;
+      height: 15%;
+      opacity: 0.8; }
+      .job .job-name-panel .job-name {
+        opacity: 1;
+        padding-bottom: 0px;
+        border-bottom: 0px; } }
 
 .is-purple {
   background-color: darkorchid; }
