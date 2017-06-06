@@ -29654,7 +29654,7 @@ var App = function App() {
         null,
         _react2.default.createElement(
           'nav',
-          { className: 'level' },
+          { className: 'level standard-nav' },
           _react2.default.createElement(
             'div',
             { className: 'level-left' },
@@ -29714,6 +29714,88 @@ var App = function App() {
                 'a',
                 { className: 'subtitle is-5', href: 'mailto:doug@avantgrogg.com' },
                 'email'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'nav',
+          { className: 'level mobile-nav is-mobile' },
+          _react2.default.createElement(
+            'p',
+            { className: 'level-item has-text-centered' },
+            _react2.default.createElement(
+              _reactRouterDom.Link,
+              { className: 'link is-info is-4 subtitle', to: '/' },
+              _react2.default.createElement(
+                'span',
+                { 'class': 'icon is-medium' },
+                _react2.default.createElement('i', { className: 'fa fa-home' })
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'p',
+            { className: 'level-item has-text-centered' },
+            _react2.default.createElement(
+              _reactRouterDom.Link,
+              { className: 'link is-info is-4 subtitle', to: '/work' },
+              _react2.default.createElement(
+                'span',
+                { 'class': 'icon is-medium' },
+                _react2.default.createElement('i', { className: 'fa fa-briefcase' })
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'p',
+            { className: 'level-item has-text-centered' },
+            _react2.default.createElement(
+              _reactRouterDom.Link,
+              { className: 'link is-info is-4 subtitle', to: '/projects' },
+              _react2.default.createElement(
+                'span',
+                { 'class': 'icon is-medium' },
+                _react2.default.createElement('i', { className: 'fa fa-flask' })
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'p',
+            { className: 'level-item' },
+            _react2.default.createElement(
+              'a',
+              { className: 'subtitle is-5', target: '_blank', href: 'https://github.com/avantgrogg' },
+              _react2.default.createElement(
+                'span',
+                { 'class': 'icon is-medium' },
+                _react2.default.createElement('i', { className: 'fa fa-code-fork' })
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'p',
+            { className: 'level-item' },
+            _react2.default.createElement(
+              'a',
+              { className: 'subtitle is-5', target: '_blank', href: 'https://www.linkedin.com/in/dougfgrogg/' },
+              _react2.default.createElement(
+                'span',
+                { 'class': 'icon is-medium' },
+                _react2.default.createElement('i', { className: 'fa fa-linkedin' })
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'p',
+            { className: 'level-item' },
+            _react2.default.createElement(
+              'a',
+              { className: 'subtitle is-5', href: 'mailto:doug@avantgrogg.com' },
+              _react2.default.createElement(
+                'span',
+                { 'class': 'icon is-medium' },
+                _react2.default.createElement('i', { className: 'fa fa-envelope' })
               )
             )
           )

@@ -21,7 +21,7 @@ const App = () => (
   <Provider store={store}>
   <Router>
     <div>
-      <nav className="level">
+      <nav className="level standard-nav">
         <div className="level-left">
           <p className="level-item has-text-centered">
             <Link className="link is-info is-4 subtitle" to="/">Home</Link>
@@ -38,6 +38,33 @@ const App = () => (
           <p className="level-item"><a className="subtitle is-5" target="_blank" href="https://www.linkedin.com/in/dougfgrogg/">linkedin</a></p>
           <p className="level-item"><a className="subtitle is-5" href="mailto:doug@avantgrogg.com">email</a></p>
         </div>
+      </nav>
+
+      <nav className="level mobile-nav is-mobile">
+          <p className="level-item has-text-centered">
+            <Link className="link is-info is-4 subtitle" to="/"><span class="icon is-medium">
+            <i className="fa fa-home"></i>
+          </span></Link>
+          </p>
+          <p className="level-item has-text-centered">
+            <Link className="link is-info is-4 subtitle" to="/work"><span class="icon is-medium">
+            <i className="fa fa-briefcase"></i>
+          </span></Link>
+          </p>
+          <p className="level-item has-text-centered">
+            <Link className="link is-info is-4 subtitle" to="/projects"><span class="icon is-medium">
+            <i className="fa fa-flask"></i>
+          </span></Link>
+          </p>
+          <p className="level-item"><a className="subtitle is-5" target="_blank" href="https://github.com/avantgrogg"><span class="icon is-medium">
+            <i className="fa fa-code-fork"></i>
+          </span></a></p>
+          <p className="level-item"><a className="subtitle is-5" target="_blank" href="https://www.linkedin.com/in/dougfgrogg/"><span class="icon is-medium">
+            <i className="fa fa-linkedin"></i>
+          </span></a></p>
+          <p className="level-item"><a className="subtitle is-5" href="mailto:doug@avantgrogg.com"><span class="icon is-medium">
+            <i className="fa fa-envelope"></i>
+          </span></a></p>
       </nav>
       
 
