@@ -3,6 +3,7 @@
         {
             "name": "Anthropologie",
             "image": "anthropologie.png",
+            "imageSmall": "anthropologie-small.png",
             "link": "www.anthropologie.com",
             "tags": [],
             "short": "",
@@ -11,6 +12,7 @@
         {
             "name": "Paste Magazine",
             "image": "pastemagazine.png",
+            "imageSmall": "pastemagazine-small.png",
             "link": "www.pastemagazine.com",
             "tags": ["ruby", "rails", "css", "js"],
             "short": "",
@@ -19,6 +21,7 @@
         {
             "name": "ReadiTrak",
             "image": "readitrak.png",
+            "imageSmall": "readitrak-small.png",
             "tags": ["php", "codeigniter", "css", "js", "joomla"],
             "short": "",
             "long": "Worked as a <b>Java</b> full stack developer implementing layouts and business logic the matched the clients design."
@@ -26,6 +29,7 @@
         {
             "name": "Cubesmart",
             "image": "cubesmart.png",
+            "imageSmall": "cubesmart-small.png",
             "tags": ["ruby", "rails", "js", "css"],
             "short": "",
             "long": "A codeigniter site with a large amount of client rendered content. Based on user interactions, json was sent to the client where it was parsed and injected into the page."
@@ -33,6 +37,7 @@
         {
             "name": "LLS",
             "image": "lls.png",
+            "imageSmall": "lls-small.png",
             "tags": ["ruby", "rails", "css", "js", "node"],
             "short": "",
             "long": "Worked on a mobile app using <b>Phonegap</b> and the <b>Cordova</b> framework. Using <b>JS</b> and <b>CSS</b> we were able to make an iOS app that behaved natively."
@@ -40,6 +45,7 @@
         {
             "name": "Urban Outfitters",
             "image": "urbanoutfitters.png",
+            "imageSmall": "urbanoutfitters-small.png",
             "tags": ["php", "codeigniter", "css", "js", "joomla"],
             "short": "",
             "long": "<p>Lead the frontend architecture creation for a replatform of URBN's core brands.</p><p>All css followed <b>BEM</b> best practices allowing for selector scoping without having to sacrifice css parse speed in the browser. Client state management was handled via <b>Redux</b> which when combined with <b>Redux-Saga</b> for async tasks, allowed us to build a far more imperative system. Which in turn, allowed for a lot more reusability between various features.</p><p>A build tool was created utilizing webpack and gulp. Which allowed for sass compilation, babel transpilation, and bundle generation.</p>"
@@ -47,6 +53,7 @@
         {
             "name": "Free People",
             "image": "freepeople.png",
+            "imageSmall": "freepeople-small.png",
             "tags": ["ruby", "rails", "js", "css"],
             "short": "",
             "long": "A <b>NodeJS</b> site built using <b>Hapi</b> that is fully functional with reactive streams used to handle async io. Isomorphic templates were achieved via <b>Nunjucks</b>"
@@ -54,6 +61,7 @@
         {
             "name": "Clutch",
             "image": "clutchshopping.png",
+            "imageSmall": "clutchshopping-small.png",
             "tags": ["cfwheels", "coldfusion", "js", "css"],
             "short": "",
             "long": "Built a user portal utilizing <b>ColdFusion</b> and <b>CFWheels</b>. Fully styled to spec and with user events that would xhr in server rendered content."
@@ -61,6 +69,7 @@
         {
             "name": "Without Walls",
             "image": "withoutwalls.png",
+            "imageSmall": "withoutwalls-small.png",
             "tags": ["php", "codeigniter", "css", "js", "joomla"],
             "short": "",
             "long": "<p>Maintained a <b>Java</b> site with certain features built out as stand-alone spas utilizing <b>Angular</b>. Site was fully responsive with a 12 column grid based on the <b>Singularity</b> framework.</p> <p>Worked with our design and services team to build out feature requests from the product team.</p>"
@@ -75,6 +84,7 @@
         {
             "name": "Straightpay",
             "image": "straightpay.png",
+            "imageSmall": "straightpay-small.png",
             "tags": ["ruby", "rails", "css", "js", "node"],
             "short": "",
             "long": "Created user/merchant portals using <b>CodeIgniter</b> including a virtual terminal. All portals had responsive design and utilized common <b>js</b> and <b>css</b> libraries. Did project management/code review for a team of offshore engineers. Created a custom <b>Joomla</b> site that was responsive."
@@ -82,6 +92,7 @@
         {
             "name": "Forgetlines",
             "image": "forgetlines.jpg",
+            "imageSmall": "forgetlines-small.jpeg",
             "tags": ["php", "codeigniter", "css", "js", "joomla"],
             "short": "",
             "long": "A Rails site that utilized a variety of apis to enhance the application inlcuding PostMarkApp, MailChimp, Yelp, Facebook, and Twitter. Performance monitoring via <b>New Relic</b> and built from the ground-up via test driven development using <b>RSPec</b>. Responsive design built on <b>Bootstrap</b>."

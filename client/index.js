@@ -42,27 +42,27 @@ const App = () => (
 
       <nav className="level mobile-nav is-mobile">
           <p className="level-item has-text-centered">
-            <Link className="link is-info is-4 subtitle" to="/"><span class="icon is-medium">
+            <Link className="link is-info is-4 subtitle" to="/"><span className="icon is-medium">
             <i className="fa fa-home"></i>
           </span></Link>
           </p>
           <p className="level-item has-text-centered">
-            <Link className="link is-info is-4 subtitle" to="/work"><span class="icon is-medium">
+            <Link className="link is-info is-4 subtitle" to="/work"><span className="icon is-medium">
             <i className="fa fa-briefcase"></i>
           </span></Link>
           </p>
           <p className="level-item has-text-centered">
-            <Link className="link is-info is-4 subtitle" to="/projects"><span class="icon is-medium">
+            <Link className="link is-info is-4 subtitle" to="/projects"><span className="icon is-medium">
             <i className="fa fa-flask"></i>
           </span></Link>
           </p>
-          <p className="level-item"><a className="subtitle is-5" target="_blank" href="https://github.com/avantgrogg"><span class="icon is-medium">
+          <p className="level-item"><a className="subtitle is-5" target="_blank" href="https://github.com/avantgrogg"><span className="icon is-medium">
             <i className="fa fa-code-fork"></i>
           </span></a></p>
-          <p className="level-item"><a className="subtitle is-5" target="_blank" href="https://www.linkedin.com/in/dougfgrogg/"><span class="icon is-medium">
+          <p className="level-item"><a className="subtitle is-5" target="_blank" href="https://www.linkedin.com/in/dougfgrogg/"><span className="icon is-medium">
             <i className="fa fa-linkedin"></i>
           </span></a></p>
-          <p className="level-item"><a className="subtitle is-5" href="mailto:doug@avantgrogg.com"><span class="icon is-medium">
+          <p className="level-item"><a className="subtitle is-5" href="mailto:doug@avantgrogg.com"><span className="icon is-medium">
             <i className="fa fa-envelope"></i>
           </span></a></p>
       </nav>

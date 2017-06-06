@@ -4958,7 +4958,13 @@ var Job = exports.Job = function Job(_ref) {
             { onClick: function onClick(e) {
                     return selectJob(e, job);
                 }, className: 'image' },
-            _react2.default.createElement('img', { src: '/images/' + job.image })
+            _react2.default.createElement(
+                'picture',
+                null,
+                _react2.default.createElement('source', { media: '(min-width: 500px)', srcSet: '/images/' + job.image }),
+                _react2.default.createElement('source', { media: '(min-width: 0px)', srcSet: '/images/' + job.imageSmall }),
+                _react2.default.createElement('img', { src: '/images/' + job.image, alt: job.name })
+            )
         ),
         _react2.default.createElement(
             'div',
@@ -29457,6 +29463,7 @@ module.exports = {
 		{
 			"name": "Anthropologie",
 			"image": "anthropologie.png",
+			"imageSmall": "anthropologie-small.png",
 			"link": "www.anthropologie.com",
 			"tags": [],
 			"short": "",
@@ -29465,6 +29472,7 @@ module.exports = {
 		{
 			"name": "Paste Magazine",
 			"image": "pastemagazine.png",
+			"imageSmall": "pastemagazine-small.png",
 			"link": "www.pastemagazine.com",
 			"tags": [
 				"ruby",
@@ -29478,6 +29486,7 @@ module.exports = {
 		{
 			"name": "ReadiTrak",
 			"image": "readitrak.png",
+			"imageSmall": "readitrak-small.png",
 			"tags": [
 				"php",
 				"codeigniter",
@@ -29491,6 +29500,7 @@ module.exports = {
 		{
 			"name": "Cubesmart",
 			"image": "cubesmart.png",
+			"imageSmall": "cubesmart-small.png",
 			"tags": [
 				"ruby",
 				"rails",
@@ -29503,6 +29513,7 @@ module.exports = {
 		{
 			"name": "LLS",
 			"image": "lls.png",
+			"imageSmall": "lls-small.png",
 			"tags": [
 				"ruby",
 				"rails",
@@ -29516,6 +29527,7 @@ module.exports = {
 		{
 			"name": "Urban Outfitters",
 			"image": "urbanoutfitters.png",
+			"imageSmall": "urbanoutfitters-small.png",
 			"tags": [
 				"php",
 				"codeigniter",
@@ -29529,6 +29541,7 @@ module.exports = {
 		{
 			"name": "Free People",
 			"image": "freepeople.png",
+			"imageSmall": "freepeople-small.png",
 			"tags": [
 				"ruby",
 				"rails",
@@ -29541,6 +29554,7 @@ module.exports = {
 		{
 			"name": "Clutch",
 			"image": "clutchshopping.png",
+			"imageSmall": "clutchshopping-small.png",
 			"tags": [
 				"cfwheels",
 				"coldfusion",
@@ -29553,6 +29567,7 @@ module.exports = {
 		{
 			"name": "Without Walls",
 			"image": "withoutwalls.png",
+			"imageSmall": "withoutwalls-small.png",
 			"tags": [
 				"php",
 				"codeigniter",
@@ -29578,6 +29593,7 @@ module.exports = {
 		{
 			"name": "Straightpay",
 			"image": "straightpay.png",
+			"imageSmall": "straightpay-small.png",
 			"tags": [
 				"ruby",
 				"rails",
@@ -29591,6 +29607,7 @@ module.exports = {
 		{
 			"name": "Forgetlines",
 			"image": "forgetlines.jpg",
+			"imageSmall": "forgetlines-small.jpeg",
 			"tags": [
 				"php",
 				"codeigniter",
@@ -29729,7 +29746,7 @@ var App = function App() {
               { className: 'link is-info is-4 subtitle', to: '/' },
               _react2.default.createElement(
                 'span',
-                { 'class': 'icon is-medium' },
+                { className: 'icon is-medium' },
                 _react2.default.createElement('i', { className: 'fa fa-home' })
               )
             )
@@ -29742,7 +29759,7 @@ var App = function App() {
               { className: 'link is-info is-4 subtitle', to: '/work' },
               _react2.default.createElement(
                 'span',
-                { 'class': 'icon is-medium' },
+                { className: 'icon is-medium' },
                 _react2.default.createElement('i', { className: 'fa fa-briefcase' })
               )
             )
@@ -29755,7 +29772,7 @@ var App = function App() {
               { className: 'link is-info is-4 subtitle', to: '/projects' },
               _react2.default.createElement(
                 'span',
-                { 'class': 'icon is-medium' },
+                { className: 'icon is-medium' },
                 _react2.default.createElement('i', { className: 'fa fa-flask' })
               )
             )
@@ -29768,7 +29785,7 @@ var App = function App() {
               { className: 'subtitle is-5', target: '_blank', href: 'https://github.com/avantgrogg' },
               _react2.default.createElement(
                 'span',
-                { 'class': 'icon is-medium' },
+                { className: 'icon is-medium' },
                 _react2.default.createElement('i', { className: 'fa fa-code-fork' })
               )
             )
@@ -29781,7 +29798,7 @@ var App = function App() {
               { className: 'subtitle is-5', target: '_blank', href: 'https://www.linkedin.com/in/dougfgrogg/' },
               _react2.default.createElement(
                 'span',
-                { 'class': 'icon is-medium' },
+                { className: 'icon is-medium' },
                 _react2.default.createElement('i', { className: 'fa fa-linkedin' })
               )
             )
@@ -29794,7 +29811,7 @@ var App = function App() {
               { className: 'subtitle is-5', href: 'mailto:doug@avantgrogg.com' },
               _react2.default.createElement(
                 'span',
-                { 'class': 'icon is-medium' },
+                { className: 'icon is-medium' },
                 _react2.default.createElement('i', { className: 'fa fa-envelope' })
               )
             )
