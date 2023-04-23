@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import Home from "../index";
+import Home from "../pages/index";
 
 describe("Portfolio App", () => {
   it("renders the image and the links", () => {
