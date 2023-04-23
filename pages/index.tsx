@@ -11,7 +11,7 @@ export default function Home() {
 
       <header className="absolute top-0 right-0 p-4 space-x-4">
         <a
-          href="doug@avantgrogg.com"
+          href="mailto:doug@avantgrogg.com"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white"
